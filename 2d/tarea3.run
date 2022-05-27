@@ -1,0 +1,11 @@
+model tarea3.mod;
+data tarea3.dat;
+option solver gurobi;
+option gurobi_options "outlev 1";
+option log_file salida2D.txt;
+solve;
+display Costos;
+display X;
+display H;
+display Q;
+close;

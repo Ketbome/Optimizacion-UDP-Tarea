@@ -1,0 +1,153 @@
+data;
+
+set centros:=
+VillaRaiz
+PuebloEscaso
+CiudadPetalia
+CiudadFerrica
+PuebloAzulizo
+CiudadPortual
+CiudadMalvalona
+PuebloVerdegal
+PuebloLavacalda
+PuebloPardal
+CiudadArborada
+CiudadCalagua
+CiudadAlgaria
+Arrecipolis
+PuebloOromar
+CiudadColosalia
+;
+
+set puntos:=
+VillaRaiz
+PuebloEscaso
+CiudadPetalia
+CiudadFerrica
+PuebloAzulizo
+CiudadPortual
+CiudadMalvalona
+PuebloVerdegal
+PuebloLavacalda
+PuebloPardal
+CiudadArborada
+CiudadCalagua
+CiudadAlgaria
+Arrecipolis
+PuebloOromar
+CiudadColosalia
+;
+
+set anios:=
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+;
+
+param CC :=
+VillaRaiz       2000
+PuebloEscaso    2000
+CiudadPetalia   5000
+CiudadFerrica   3000
+PuebloAzulizo   5000
+CiudadPortual	3000
+CiudadMalvalona	4000
+PuebloVerdegal	3000
+PuebloLavacalda	4000
+PuebloPardal	4000
+CiudadArborada	5000
+CiudadCalagua	3000
+CiudadAlgaria	5000
+Arrecipolis		4000
+PuebloOromar 	5000
+CiudadColosalia 4000;
+
+param CT :=
+VillaRaiz       75
+PuebloEscaso    75	
+CiudadPetalia   60
+CiudadFerrica   0
+PuebloAzulizo   30
+CiudadPortual	15
+CiudadMalvalona	40
+PuebloVerdegal	35
+PuebloLavacalda	25
+PuebloPardal	30
+CiudadArborada	30
+CiudadCalagua	30
+CiudadAlgaria	45
+Arrecipolis		60
+PuebloOromar 	90
+CiudadColosalia 105;
+
+param CTT :
+
+					VillaRaiz	PuebloEscaso	CiudadPetalia	CiudadFerrica	PuebloAzulizo	CiudadPortual	CiudadMalvalona	PuebloVerdegal	PuebloLavacalda	PuebloPardal	CiudadArborada	CiudadCalagua	CiudadAlgaria	Arrecipolis	PuebloOromar	CiudadColosalia :=
+VillaRaiz			10	20	30	40	50	60	60	50	50	50	60	40	30	20	30	70
+PuebloEscaso		20	10	20	30	40	50	60	60	60	60	60	50	40	30	20	80
+CiudadPetalia		30	20	10	20	30	40	50	60	60	60	50	60	50	40	30	80
+CiudadFerrica		40	30	20	10	20	30	40	50	50	50	40	60	60	50	40	70
+PuebloAzulizo		50	40	30	20	10	20	30	40	40	40	30	50	60	60	50	60
+CiudadPortual		60	50	40	30	20	10	20	30	30	30	20	40	50	60	60	70
+CiudadMalvalona		60	60	50	40	30	20	10	20	20	20	30	30	40	50	70	80
+PuebloVerdegal		50	60	60	50	40	30	20	10	30	20	30	20	30	40	70	80
+PuebloLavacalda		50	60	60	50	40	30	20	30	10	30	40	20	30	40	70	80
+PuebloPardal		50	60	60	50	40	30	20	20	30	10	20	20	30	40	70	80
+CiudadArborada		60	60	50	40	30	20	30	30	40	20	10	30	40	50	70	80
+CiudadCalagua		40	50	60	60	50	40	30	20	20	20	30	10	20	30	60	70
+CiudadAlgaria		30	40	50	60	60	50	40	30	30	30	40	20	10	20	50	60
+Arrecipolis			20	30	40	50	60	60	50	40	40	40	50	30	20	10	40	50
+PuebloOromar		30	20	30	40	50	60	70	70	70	70	70	60	50	40	10	20
+CiudadColosalia		40	30	40	50	60	70	80	80	80	80	80	70	60	50	20	10;
+
+
+param DM :
+				1	2	3	4	5	6	7	8	9	10 :=
+VillaRaiz		14	12	5	15	3	16	12	13	15	6
+PuebloEscaso	5	8	12	16	4	8	14	6	6	20
+CiudadPetalia	7	14	6	18	15	12	5	8	18	8
+CiudadFerrica	17	5	15	12	8	6	12	9	17	15
+PuebloAzulizo	7	13	6	6	9	15	6	10	9	16
+CiudadPortual	19	16	17	5	11	16	9	18	15	7
+CiudadMalvalona	4	4	14	8	6	12	14	7	6	19
+PuebloVerdegal	8	9	7	18	14	7	17	15	14	15
+PuebloLavacalda	10	11	12	15	4	7	11	6	15	16
+PuebloPardal	8	14	15	20	19	13	16	12	15	12
+CiudadArborada	5	8	4	3	7	19	5	12	12	20
+CiudadCalagua	6	17	4	6	12	3	19	15	8	19
+CiudadAlgaria	5	19	7	19	6	4	6	14	6	18
+Arrecipolis		12	3	13	13	12	7	18	8	13	11
+PuebloOromar	9	20	13	9	13	9	13	6	10	12
+CiudadColosalia	20	15	18	12	8	20	9	12	15	4;
+
+
+
+param CAP :=
+VillaRaiz		10
+PuebloEscaso	20
+CiudadPetalia	20
+CiudadFerrica	30
+PuebloAzulizo	10
+CiudadPortual	20
+CiudadMalvalona	40
+PuebloVerdegal	30
+PuebloLavacalda	10
+PuebloPardal	20
+CiudadArborada	10
+CiudadCalagua	30
+CiudadAlgaria	10
+Arrecipolis		10
+PuebloOromar	20
+CiudadColosalia	10;
+
+param C := 10;
+
+
+

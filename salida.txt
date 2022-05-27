@@ -1,0 +1,4194 @@
+presolve: constraint demanda['CiudadColosalia',6] cannot hold:
+	body >= 20 cannot be <= 16; difference = 4
+presolve: constraint demanda['CiudadColosalia',3] cannot hold:
+	body >= 18 cannot be <= 16; difference = 2
+presolve: constraint demanda['CiudadColosalia',1] cannot hold:
+	body >= 20 cannot be <= 16; difference = 4
+presolve: constraint demanda['PuebloOromar',2] cannot hold:
+	body >= 20 cannot be <= 16; difference = 4
+presolve: constraint demanda['Arrecipolis',7] cannot hold:
+	body >= 18 cannot be <= 16; difference = 2
+21 presolve messages suppressed.
+costo = 260640
+
+X [*] :=
+    Arrecipolis  1
+  CiudadAlgaria  1
+ CiudadArborada  1
+  CiudadCalagua  1
+CiudadColosalia  1
+  CiudadFerrica  1
+CiudadMalvalona  1
+  CiudadPetalia  1
+  CiudadPortual  1
+  PuebloAzulizo  1
+   PuebloEscaso  1
+PuebloLavacalda  1
+   PuebloOromar  1
+   PuebloPardal  1
+ PuebloVerdegal  1
+      VillaRaiz  1
+;
+
+Y [*,*]
+:                 1   2   3   4   5   6   7   8   9  10    :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0
+;
+
+W [*,*,1]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,2]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0
+
+ [*,*,3]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,4]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0
+
+ [*,*,5]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,6]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   1
+CiudadAlgaria     0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   1
+CiudadArborada    0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   1
+CiudadCalagua     0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   1
+CiudadColosalia   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   1
+CiudadFerrica     0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   1
+CiudadMalvalona   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   1
+CiudadPetalia     0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   1
+CiudadPortual     0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   1
+PuebloAzulizo     0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   1
+PuebloEscaso      0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   1
+PuebloLavacalda   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   1
+PuebloOromar      0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   1
+PuebloPardal      0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   1
+PuebloVerdegal    0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   1
+VillaRaiz         0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   1
+
+ [*,*,7]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0
+
+ [*,*,8]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,9]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,10]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   1   0   1   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   1   0   1   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   1   0   1   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   1   0   1   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   1   0   1   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   1   0   1   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   1   0   1   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   1   0   1   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   1   0   1   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   1   0   1   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   1   0   1   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   1   0   1   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   1   0   1   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   1   0   1   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   1   0   1   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   1   0   1   0   0   0   0
+;
+
+ampl: reset;
+ampl: reset;
+ampl: 
+ampl: include tarea3.run
+Gurobi 9.1.1: outlev 1
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 480 rows, 2736 columns and 8000 nonzeros
+Model fingerprint: 0xd04042d8
+Variable types: 2560 continuous, 176 integer (16 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [1e+01, 2e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [3e+00, 2e+01]
+Found heuristic solution: objective 335700.00000
+Presolve removed 170 rows and 171 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 12 available processors)
+
+Solution count 1: 335700 
+
+Model is unbounded
+Best objective 3.357000000000e+05, best bound -, gap -
+Gurobi 9.1.1: unbounded; variable.unbdd returned.
+No basis.
+costo = 0
+
+X [*] :=
+    Arrecipolis  0
+  CiudadAlgaria  0
+ CiudadArborada  0
+  CiudadCalagua  0
+CiudadColosalia  0
+  CiudadFerrica  0
+CiudadMalvalona  0
+  CiudadPetalia  0
+  CiudadPortual  0
+  PuebloAzulizo  0
+   PuebloEscaso  0
+PuebloLavacalda  0
+   PuebloOromar  0
+   PuebloPardal  0
+ PuebloVerdegal  0
+      VillaRaiz  0
+;
+
+Y [*,*]
+:                 1   2   3   4   5   6   7   8   9  10    :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0
+;
+
+W [*,*,1]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,2]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,3]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,4]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,5]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,6]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,7]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,8]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,9]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,10]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+;
+
+ampl: 
+ampl: reset;
+ampl: reset;
+ampl: include tarea3.run
+Gurobi 9.1.1: outlev 1
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 480 rows, 2736 columns and 8000 nonzeros
+Model fingerprint: 0xd04042d8
+Variable types: 2560 continuous, 176 integer (16 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [1e+01, 2e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [3e+00, 2e+01]
+Found heuristic solution: objective 335700.00000
+Presolve removed 170 rows and 171 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 12 available processors)
+
+Solution count 1: 335700 
+
+Model is unbounded
+Best objective 3.357000000000e+05, best bound -, gap -
+Gurobi 9.1.1: unbounded; variable.unbdd returned.
+No basis.
+costo = 0
+
+X [*] :=
+    Arrecipolis  0
+  CiudadAlgaria  0
+ CiudadArborada  0
+  CiudadCalagua  0
+CiudadColosalia  0
+  CiudadFerrica  0
+CiudadMalvalona  0
+  CiudadPetalia  0
+  CiudadPortual  0
+  PuebloAzulizo  0
+   PuebloEscaso  0
+PuebloLavacalda  0
+   PuebloOromar  0
+   PuebloPardal  0
+ PuebloVerdegal  0
+      VillaRaiz  0
+;
+
+Y [*,*]
+:                 1   2   3   4   5   6   7   8   9  10    :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0
+;
+
+W [*,*,1]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,2]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,3]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,4]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,5]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,6]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,7]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,8]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,9]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,10]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+;
+
+ampl: 
+ampl: reset;
+ampl: include franco.run
+Gurobi 9.1.1: outlev 1
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 480 rows, 2736 columns and 8000 nonzeros
+Model fingerprint: 0xd04042d8
+Variable types: 2560 continuous, 176 integer (16 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [1e+01, 2e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [3e+00, 2e+01]
+Found heuristic solution: objective 335700.00000
+Presolve removed 170 rows and 171 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 12 available processors)
+
+Solution count 1: 335700 
+
+Model is unbounded
+Best objective 3.357000000000e+05, best bound -, gap -
+Gurobi 9.1.1: unbounded; variable.unbdd returned.
+No basis.
+costo = 0
+
+X [*] :=
+    Arrecipolis  0
+  CiudadAlgaria  0
+ CiudadArborada  0
+  CiudadCalagua  0
+CiudadColosalia  0
+  CiudadFerrica  0
+CiudadMalvalona  0
+  CiudadPetalia  0
+  CiudadPortual  0
+  PuebloAzulizo  0
+   PuebloEscaso  0
+PuebloLavacalda  0
+   PuebloOromar  0
+   PuebloPardal  0
+ PuebloVerdegal  0
+      VillaRaiz  0
+;
+
+Y [*,*]
+:                 1   2   3   4   5   6   7   8   9  10    :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0
+;
+
+W [*,*,1]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,2]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,3]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,4]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,5]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,6]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,7]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,8]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,9]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,10]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+;
+
+ampl: 
+ampl: reset;
+ampl: include franco.run
+
+franco.mod, line 32 (offset 1802):
+	centros is not defined
+context:  subject to control{v in  >>> centros, <<<  w in anios}:
+ampl: 
+ampl: reset;
+ampl: include franco.run
+
+franco.mod, line 32 (offset 1802):
+	centros is not defined
+context:  subject to control{v in  >>> centros, <<<  w in anios}:
+ampl: reset;
+ampl: include franco.run
+
+franco.mod, line 32 (offset 1802):
+	centros is not defined
+context:  subject to control{c in  >>> centros, <<<  a in anios}:
+ampl: 
+ampl: reset;
+ampl: include franco.run
+Gurobi 9.1.1: outlev 1
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 640 rows, 2736 columns and 8320 nonzeros
+Model fingerprint: 0xa1c5f73d
+Variable types: 2560 continuous, 176 integer (86 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [1e+01, 2e+04]
+  Bounds range     [1e+00, 4e+00]
+  RHS range        [3e+00, 2e+01]
+Found heuristic solution: objective 343200.00000
+Presolve removed 10 rows and 10 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 12 available processors)
+
+Solution count 1: 343200 
+
+Model is unbounded
+Best objective 3.432000000000e+05, best bound -, gap -
+Gurobi 9.1.1: unbounded; variable.unbdd returned.
+No basis.
+costo = 0
+
+X [*] :=
+    Arrecipolis  0
+  CiudadAlgaria  0
+ CiudadArborada  0
+  CiudadCalagua  0
+CiudadColosalia  0
+  CiudadFerrica  0
+CiudadMalvalona  0
+  CiudadPetalia  0
+  CiudadPortual  0
+  PuebloAzulizo  0
+   PuebloEscaso  0
+PuebloLavacalda  0
+   PuebloOromar  0
+   PuebloPardal  0
+ PuebloVerdegal  0
+      VillaRaiz  0
+;
+
+Y [*,*]
+:                 1   2   3   4   5   6   7   8   9  10    :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0
+;
+
+W [*,*,1]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,2]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,3]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,4]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,5]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,6]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,7]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,8]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,9]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,10]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+;
+
+ampl: 
+ampl: reset;
+ampl: include franco.run
+Gurobi 9.1.1: outlev 1
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 480 rows, 2736 columns and 8000 nonzeros
+Model fingerprint: 0xd04042d8
+Variable types: 2560 continuous, 176 integer (16 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [1e+01, 2e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [3e+00, 2e+01]
+Found heuristic solution: objective 335700.00000
+Presolve removed 170 rows and 171 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 12 available processors)
+
+Solution count 1: 335700 
+
+Model is unbounded
+Best objective 3.357000000000e+05, best bound -, gap -
+Gurobi 9.1.1: unbounded; variable.unbdd returned.
+No basis.
+costo = 0
+
+X [*] :=
+    Arrecipolis  0
+  CiudadAlgaria  0
+ CiudadArborada  0
+  CiudadCalagua  0
+CiudadColosalia  0
+  CiudadFerrica  0
+CiudadMalvalona  0
+  CiudadPetalia  0
+  CiudadPortual  0
+  PuebloAzulizo  0
+   PuebloEscaso  0
+PuebloLavacalda  0
+   PuebloOromar  0
+   PuebloPardal  0
+ PuebloVerdegal  0
+      VillaRaiz  0
+;
+
+Y [*,*]
+:                 1   2   3   4   5   6   7   8   9  10    :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0
+;
+
+W [*,*,1]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,2]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,3]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,4]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,5]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,6]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,7]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,8]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,9]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,10]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+;
+
+ampl: 
+ampl: reset;
+ampl: include franco.run
+Gurobi 9.1.1: outlev 1
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 480 rows, 2736 columns and 8000 nonzeros
+Model fingerprint: 0xf17c62c0
+Variable types: 2560 continuous, 176 integer (16 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [1e+01, 2e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [3e+00, 2e+01]
+Found heuristic solution: objective 340585.00000
+Presolve removed 10 rows and 10 columns
+Presolve time: 0.03s
+Presolved: 470 rows, 2726 columns, 7830 nonzeros
+Variable types: 2560 continuous, 166 integer (16 binary)
+
+Root relaxation: objective 1.555260e+05, 632 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 155526.000    0   37 340585.000 155526.000  54.3%     -    0s
+H    0     0                    158250.00000 155526.000  1.72%     -    0s
+H    0     0                    158215.00000 155622.000  1.64%     -    0s
+H    0     0                    157840.00000 155622.000  1.41%     -    0s
+     0     0 157387.000    0   15 157840.000 157387.000  0.29%     -    0s
+H    0     0                    157560.00000 157387.000  0.11%     -    0s
+     0     0 157463.500    0    5 157560.000 157463.500  0.06%     -    0s
+H    0     0                    157550.00000 157463.500  0.05%     -    0s
+H    0     0                    157520.00000 157487.500  0.02%     -    0s
+     0     0 157512.500    0    2 157520.000 157512.500  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 4
+  MIR: 6
+
+Explored 1 nodes (715 simplex iterations) in 0.18 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 5: 157520 157550 157840 ... 340585
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.575200000000e+05, best bound 1.575125000000e+05, gap 0.0048%
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 480 rows, 2736 columns and 8000 nonzeros
+Model fingerprint: 0x588340ba
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [1e+01, 2e+04]
+  Bounds range     [1e+00, 4e+00]
+  RHS range        [3e+00, 2e+01]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.2904000e+05   1.801000e+03   0.000000e+00      0s
+     329    1.5752000e+05   0.000000e+00   0.000000e+00      0s
+
+Solved in 329 iterations and 0.00 seconds
+Optimal objective  1.575200000e+05
+Gurobi 9.1.1: optimal solution; objective 157520
+715 simplex iterations
+1 branch-and-cut nodes
+plus 329 simplex iterations for intbasis
+costo = 157520
+
+X [*] :=
+    Arrecipolis  0
+  CiudadAlgaria  0
+ CiudadArborada  0
+  CiudadCalagua  1
+CiudadColosalia  0
+  CiudadFerrica  1
+CiudadMalvalona  1
+  CiudadPetalia  0
+  CiudadPortual  1
+  PuebloAzulizo  0
+   PuebloEscaso  1
+PuebloLavacalda  0
+   PuebloOromar  1
+   PuebloPardal  1
+ PuebloVerdegal  1
+      VillaRaiz  1
+;
+
+Y [*,*]
+:                 1   2   3   4   5   6   7   8   9  10    :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     3   3   3   3   2   3   3   3   3   3
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     4   3   4   3   3   4   3   3   3   3
+CiudadMalvalona   1   2   2   2   1   2   3   1   3   4
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0
+CiudadPortual     2   2   2   2   2   2   1   2   2   2
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      2   2   2   2   1   2   2   2   2   2
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      2   2   2   2   2   2   2   2   2   2
+PuebloPardal      1   2   2   2   2   2   2   2   2   2
+PuebloVerdegal    1   2   1   3   2   1   3   2   2   3
+VillaRaiz         1   1   1   1   1   1   1   1   1   1
+;
+
+W [*,*,1]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+:                 $1  $2  $3  $4   $5   $6  $7  $8   $9 $10 $11 $12 $13 $14 $15 :=
+Arrecipolis        0   0   0   0    0    0   0   0    0   0   0   0   0   0   0
+CiudadAlgaria      0   0   0   0    0    0   0   0    0   0   0   0   0   0   0
+CiudadArborada     0   0   0   0    0    0   0   0    0   0   0   0   0   0   0
+CiudadCalagua     12   5   0   6    0    0   0   0    0   0   0   7   0   0   0
+CiudadColosalia    0   0   0   0    0    0   0   0    0   0   0   0   0   0   0
+CiudadFerrica      0   0   0   0    0   17   0   6    0   7   0   0   0   0   0
+CiudadMalvalona    0   0   0   0    0    0   4   0    2   0   0   3   0   0   0
+CiudadPetalia      0   0   0   0    0    0   0   0    0   0   0   0   0   0   0
+CiudadPortual      0   0   3   0    0    0   0   0   17   0   0   0   0   0   0
+PuebloAzulizo      0   0   0   0    0    0   0   0    0   0   0   0   0   0   0
+PuebloEscaso       0   0   0   0    0    0   0   1    0   0   5   0   9   0   0
+PuebloLavacalda    0   0   0   0    0    0   0   0    0   0   0   0   0   0   0
+PuebloOromar       0   0   0   0   20    0   0   0    0   0   0   0   0   0   0
+PuebloPardal       0   0   2   0    0    0   0   0    0   0   0   0   0   8   0
+PuebloVerdegal     0   0   0   0    0    0   0   0    0   0   0   0   0   0   8
+VillaRaiz          0   0   0   0    0    0   0   0    0   0   0   0   0   0   0
+
+:               VillaRaiz    :=
+Arrecipolis          0
+CiudadAlgaria        0
+CiudadArborada       0
+CiudadCalagua        0
+CiudadColosalia      0
+CiudadFerrica        0
+CiudadMalvalona      0
+CiudadPetalia        0
+CiudadPortual        0
+PuebloAzulizo        0
+PuebloEscaso         4
+PuebloLavacalda      0
+PuebloOromar         0
+PuebloPardal         0
+PuebloVerdegal       0
+VillaRaiz           10
+
+ [*,*,2]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+:                $1   $2  $3   $4   $5  $6  $7   $8   $9 $10 $11  $12  $13  $14 :=
+Arrecipolis       0    0   0    0    0   0   0    0    0   0   0    0    0    0
+CiudadAlgaria     0    0   0    0    0   0   0    0    0   0   0    0    0    0
+CiudadArborada    0    0   0    0    0   0   0    0    0   0   0    0    0    0
+CiudadCalagua     0   19   0   11    0   0   0    0    0   0   0    0    0    0
+CiudadColosalia   0    0   0    0    0   0   0    0    0   0   0    0    0    0
+CiudadFerrica     0    0   0    0    0   5   0   14    0   6   0    0    3    0
+CiudadMalvalona   0    0   0    0    0   0   4    0    3   0   0   11    0    0
+CiudadPetalia     0    0   0    0    0   0   0    0    0   0   0    0    0    0
+CiudadPortual     0    0   0    0    0   0   0    0   13   7   0    0    0    0
+PuebloAzulizo     0    0   0    0    0   0   0    0    0   0   0    0    0    0
+PuebloEscaso      0    0   0    0    0   0   0    0    0   0   8    0   12    0
+PuebloLavacalda   0    0   0    0    0   0   0    0    0   0   0    0    0    0
+PuebloOromar      0    0   0    0   15   0   0    0    0   0   0    0    5    0
+PuebloPardal      0    0   8    0    0   0   0    0    0   0   0    0    0   12
+PuebloVerdegal    3    0   0    6    0   0   0    0    0   0   0    0    0    2
+VillaRaiz         0    0   0    0    0   0   0    0    0   0   0    0    0    0
+
+:               PuebloVerdegal VillaRaiz    :=
+Arrecipolis            0            0
+CiudadAlgaria          0            0
+CiudadArborada         0            0
+CiudadCalagua          0            0
+CiudadColosalia        0            0
+CiudadFerrica          0            2
+CiudadMalvalona        0            0
+CiudadPetalia          0            0
+CiudadPortual          0            0
+PuebloAzulizo          0            0
+PuebloEscaso           0            0
+PuebloLavacalda        0            0
+PuebloOromar           0            0
+PuebloPardal           0            0
+PuebloVerdegal         9            0
+VillaRaiz              0           10
+
+ [*,*,3]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+:                $1  $2  $3  $4   $5   $6   $7  $8   $9 $10 $11  $12  $13  $14 :=
+Arrecipolis       0   0   0   0    0    0    0   0    0   0   0    0    0    0
+CiudadAlgaria     0   0   0   0    0    0    0   0    0   0   0    0    0    0
+CiudadArborada    0   0   0   0    0    0    0   0    0   0   0    0    0    0
+CiudadCalagua     8   7   0   4    0    0    0   0    0   0   0   11    0    0
+CiudadColosalia   0   0   0   0    0    0    0   0    0   0   0    0    0    0
+CiudadFerrica     0   0   0   0    0   15    0   6    0   6   3    0    0    0
+CiudadMalvalona   0   0   0   0    0    0   14   0    0   0   0    1    0    0
+CiudadPetalia     0   0   0   0    0    0    0   0    0   0   0    0    0    0
+CiudadPortual     0   0   3   0    0    0    0   0   17   0   0    0    0    0
+PuebloAzulizo     0   0   0   0    0    0    0   0    0   0   0    0    0    0
+PuebloEscaso      0   0   0   0    0    0    0   0    0   0   9    0   11    0
+PuebloLavacalda   0   0   0   0    0    0    0   0    0   0   0    0    0    0
+PuebloOromar      0   0   0   0   18    0    0   0    0   0   0    0    2    0
+PuebloPardal      0   0   1   0    0    0    0   0    0   0   0    0    0   15
+PuebloVerdegal    0   0   0   0    0    0    0   0    0   0   0    0    0    0
+VillaRaiz         5   0   0   0    0    0    0   0    0   0   0    0    0    0
+
+:               PuebloVerdegal VillaRaiz    :=
+Arrecipolis            0            0
+CiudadAlgaria          0            0
+CiudadArborada         0            0
+CiudadCalagua          0            0
+CiudadColosalia        0            0
+CiudadFerrica          0            0
+CiudadMalvalona        0            0
+CiudadPetalia          0            0
+CiudadPortual          0            0
+PuebloAzulizo          0            0
+PuebloEscaso           0            0
+PuebloLavacalda        0            0
+PuebloOromar           0            0
+PuebloPardal           0            0
+PuebloVerdegal         7            0
+VillaRaiz              0            5
+
+ [*,*,4]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+:                 $1   $2  $3  $4   $5   $6  $7   $8  $9 $10  $11  $12 $13  $14 :=
+Arrecipolis        0    0   0   0    0    0   0    0   0   0    0    0   0    0
+CiudadAlgaria      0    0   0   0    0    0   0    0   0   0    0    0   0    0
+CiudadArborada     0    0   0   0    0    0   0    0   0   0    0    0   0    0
+CiudadCalagua     13   17   0   0    0    0   0    0   0   0    0    0   0    0
+CiudadColosalia    0    0   0   0    0    0   0    0   0   0    0    0   0    0
+CiudadFerrica      0    0   0   0    0   12   0   18   0   0    0    0   0    0
+CiudadMalvalona    0    0   0   0    0    0   5    0   0   0    0   15   0    0
+CiudadPetalia      0    0   0   0    0    0   0    0   0   0    0    0   0    0
+CiudadPortual      0    0   3   0    0    0   3    0   5   6    0    0   0    0
+PuebloAzulizo      0    0   0   0    0    0   0    0   0   0    0    0   0    0
+PuebloEscaso       0    0   0   0    0    0   0    0   0   0   16    0   1    0
+PuebloLavacalda    0    0   0   0    0    0   0    0   0   0    0    0   0    0
+PuebloOromar       0    0   0   0   12    0   0    0   0   0    0    0   8    0
+PuebloPardal       0    0   0   0    0    0   0    0   0   0    0    0   0   20
+PuebloVerdegal     0    2   0   6    0    0   0    0   0   0    0    0   0    0
+VillaRaiz          0    0   0   0    0    0   0    0   0   0    0    0   0    0
+
+:               PuebloVerdegal VillaRaiz    :=
+Arrecipolis             0           0
+CiudadAlgaria           0           0
+CiudadArborada          0           0
+CiudadCalagua           0           0
+CiudadColosalia         0           0
+CiudadFerrica           0           0
+CiudadMalvalona         0           0
+CiudadPetalia           0           0
+CiudadPortual           0           0
+PuebloAzulizo           0           0
+PuebloEscaso            0           3
+PuebloLavacalda         0           0
+PuebloOromar            0           0
+PuebloPardal            0           0
+PuebloVerdegal         18           2
+VillaRaiz               0          10
+
+ [*,*,5]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+:                 $1  $2  $3   $4  $5  $6  $7   $8   $9 $10 $11 $12  $13  $14 :=
+Arrecipolis        0   0   0    0   0   0   0    0    0   0   0   0    0    0
+CiudadAlgaria      0   0   0    0   0   0   0    0    0   0   0   0    0    0
+CiudadArborada     0   0   0    0   0   0   0    0    0   0   0   0    0    0
+CiudadCalagua      0   6   0   12   0   0   0    0    0   0   0   0    0    0
+CiudadColosalia    0   0   0    0   0   0   0    0    0   0   0   0    0    0
+CiudadFerrica      0   0   0    0   0   8   0   15    0   7   0   0    0    0
+CiudadMalvalona    0   0   0    0   0   0   6    0    0   0   0   4    0    0
+CiudadPetalia      0   0   0    0   0   0   0    0    0   0   0   0    0    0
+CiudadPortual      0   0   6    0   0   0   0    0   11   2   0   0    0    0
+PuebloAzulizo      0   0   0    0   0   0   0    0    0   0   0   0    0    0
+PuebloEscaso       2   0   0    0   0   0   0    0    0   0   4   0    1    0
+PuebloLavacalda    0   0   0    0   0   0   0    0    0   0   0   0    0    0
+PuebloOromar       0   0   0    0   8   0   0    0    0   0   0   0   12    0
+PuebloPardal       0   0   1    0   0   0   0    0    0   0   0   0    0   19
+PuebloVerdegal     0   0   0    0   0   0   0    0    0   0   0   0    0    0
+VillaRaiz         10   0   0    0   0   0   0    0    0   0   0   0    0    0
+
+:               PuebloVerdegal VillaRaiz    :=
+Arrecipolis             0           0
+CiudadAlgaria           0           0
+CiudadArborada          0           0
+CiudadCalagua           0           0
+CiudadColosalia         0           0
+CiudadFerrica           0           0
+CiudadMalvalona         0           0
+CiudadPetalia           0           0
+CiudadPortual           0           0
+PuebloAzulizo           0           0
+PuebloEscaso            0           3
+PuebloLavacalda         0           0
+PuebloOromar            0           0
+PuebloPardal            0           0
+PuebloVerdegal         14           0
+VillaRaiz               0           0
+
+ [*,*,6]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+:                $1  $2  $3  $4   $5  $6   $7   $8   $9  $10 $11 $12 $13  $14 :=
+Arrecipolis       0   0   0   0    0   0    0    0    0    0   0   0   0    0
+CiudadAlgaria     0   0   0   0    0   0    0    0    0    0   0   0   0    0
+CiudadArborada    0   0   0   0    0   0    0    0    0    0   0   0   0    0
+CiudadCalagua     7   4   7   3    0   0    0    0    0    0   0   0   0    0
+CiudadColosalia   0   0   0   0    0   0    0    0    0    0   0   0   0    0
+CiudadFerrica     0   0   0   0    0   6    0   12    0   12   0   0   0    0
+CiudadMalvalona   0   0   0   0    0   0   12    0    1    0   0   7   0    0
+CiudadPetalia     0   0   0   0    0   0    0    0    0    0   0   0   0    0
+CiudadPortual     0   0   2   0    0   0    0    0   15    3   0   0   0    0
+PuebloAzulizo     0   0   0   0    0   0    0    0    0    0   0   0   0    0
+PuebloEscaso      0   0   0   0    0   0    0    0    0    0   8   0   9    0
+PuebloLavacalda   0   0   0   0    0   0    0    0    0    0   0   0   0    0
+PuebloOromar      0   0   0   0   20   0    0    0    0    0   0   0   0    0
+PuebloPardal      0   0   7   0    0   0    0    0    0    0   0   0   0   13
+PuebloVerdegal    0   0   3   0    0   0    0    0    0    0   0   0   0    0
+VillaRaiz         0   0   0   0    0   0    0    0    0    0   0   0   0    0
+
+:               PuebloVerdegal VillaRaiz    :=
+Arrecipolis            0            0
+CiudadAlgaria          0            0
+CiudadArborada         0            0
+CiudadCalagua          0            3
+CiudadColosalia        0            0
+CiudadFerrica          0            0
+CiudadMalvalona        0            0
+CiudadPetalia          0            0
+CiudadPortual          0            0
+PuebloAzulizo          0            0
+PuebloEscaso           0            3
+PuebloLavacalda        0            0
+PuebloOromar           0            0
+PuebloPardal           0            0
+PuebloVerdegal         7            0
+VillaRaiz              0           10
+
+ [*,*,7]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+:                 $1  $2  $3   $4  $5   $6   $7  $8  $9 $10  $11  $12  $13  $14 :=
+Arrecipolis        0   0   0    0   0    0    0   0   0   0    0    0    0    0
+CiudadAlgaria      0   0   0    0   0    0    0   0   0   0    0    0    0    0
+CiudadArborada     0   0   0    0   0    0    0   0   0   0    0    0    0    0
+CiudadCalagua     11   0   0   19   0    0    0   0   0   0    0    0    0    0
+CiudadColosalia    0   0   0    0   0    0    0   0   0   0    0    0    0    0
+CiudadFerrica      0   0   0    0   0   12    0   5   0   6    0    0    0    0
+CiudadMalvalona    0   0   0    0   0    0   14   0   0   0    0   11    0    0
+CiudadPetalia      0   0   0    0   0    0    0   0   0   0    0    0    0    0
+CiudadPortual      0   0   1    0   0    0    0   0   9   0    0    0    0    0
+PuebloAzulizo      0   0   0    0   0    0    0   0   0   0    0    0    0    0
+PuebloEscaso       0   0   0    0   0    0    0   0   0   0   14    0    2    0
+PuebloLavacalda    0   0   0    0   0    0    0   0   0   0    0    0    0    0
+PuebloOromar       0   0   0    0   9    0    0   0   0   0    0    0   11    0
+PuebloPardal       0   0   4    0   0    0    0   0   0   0    0    0    0   16
+PuebloVerdegal     5   6   0    0   0    0    0   0   0   0    0    0    0    0
+VillaRaiz          2   0   0    0   0    0    0   0   0   0    0    0    0    0
+
+:               PuebloVerdegal VillaRaiz    :=
+Arrecipolis             0           0
+CiudadAlgaria           0           0
+CiudadArborada          0           0
+CiudadCalagua           0           0
+CiudadColosalia         0           0
+CiudadFerrica           0           0
+CiudadMalvalona         0           0
+CiudadPetalia           0           0
+CiudadPortual           0           0
+PuebloAzulizo           0           0
+PuebloEscaso            0           4
+PuebloLavacalda         0           0
+PuebloOromar            0           0
+PuebloPardal            0           0
+PuebloVerdegal         17           0
+VillaRaiz               0           8
+
+ [*,*,8]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+:                $1   $2  $3   $4   $5  $6  $7  $8   $9  $10 $11 $12 $13  $14 :=
+Arrecipolis       0    0   0    0    0   0   0   0    0    0   0   0   0    0
+CiudadAlgaria     0    0   0    0    0   0   0   0    0    0   0   0   0    0
+CiudadArborada    0    0   0    0    0   0   0   0    0    0   0   0   0    0
+CiudadCalagua     0   14   0   13    0   0   0   0    0    0   0   3   0    0
+CiudadColosalia   0    0   0    0    0   0   0   0    0    0   0   0   0    0
+CiudadFerrica     0    0   0    0    0   9   0   8    0   10   0   0   0    0
+CiudadMalvalona   0    0   0    0    0   0   7   0    0    0   0   3   0    0
+CiudadPetalia     0    0   0    0    0   0   0   0    0    0   0   0   0    0
+CiudadPortual     0    0   2    0    0   0   0   0   18    0   0   0   0    0
+PuebloAzulizo     0    0   0    0    0   0   0   0    0    0   0   0   0    0
+PuebloEscaso      8    0   0    0    0   0   0   0    0    0   6   0   0    0
+PuebloLavacalda   0    0   0    0    0   0   0   0    0    0   0   0   0    0
+PuebloOromar      0    0   0    0   12   0   0   0    0    0   0   0   6    0
+PuebloPardal      0    0   8    0    0   0   0   0    0    0   0   0   0   12
+PuebloVerdegal    0    0   2    2    0   0   0   0    0    0   0   0   0    0
+VillaRaiz         0    0   0    0    0   0   0   0    0    0   0   0   0    0
+
+:               PuebloVerdegal VillaRaiz    :=
+Arrecipolis             0           0
+CiudadAlgaria           0           0
+CiudadArborada          0           0
+CiudadCalagua           0           0
+CiudadColosalia         0           0
+CiudadFerrica           0           0
+CiudadMalvalona         0           0
+CiudadPetalia           0           0
+CiudadPortual           0           0
+PuebloAzulizo           0           0
+PuebloEscaso            0           3
+PuebloLavacalda         0           0
+PuebloOromar            0           0
+PuebloPardal            0           0
+PuebloVerdegal         15           0
+VillaRaiz               0          10
+
+ [*,*,9]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+:                 $1  $2  $3  $4   $5   $6  $7   $8   $9 $10 $11  $12 $13  $14 :=
+Arrecipolis        0   0   0   0    0    0   0    0    0   0   0    0   0    0
+CiudadAlgaria      0   0   0   0    0    0   0    0    0   0   0    0   0    0
+CiudadArborada     0   0   0   0    0    0   0    0    0   0   0    0   0    0
+CiudadCalagua     13   6   0   8    0    0   0    0    0   0   0    2   0    0
+CiudadColosalia    0   0   0   0    0    0   0    0    0   0   0    0   0    0
+CiudadFerrica      0   0   0   0    0   17   0   13    0   0   0    0   0    0
+CiudadMalvalona    0   0   0   0    0    0   6    0    2   9   0   13   0    0
+CiudadPetalia      0   0   0   0    0    0   0    0    0   0   0    0   0    0
+CiudadPortual      0   0   7   0    0    0   0    0   13   0   0    0   0    0
+PuebloAzulizo      0   0   0   0    0    0   0    0    0   0   0    0   0    0
+PuebloEscaso       0   0   0   0    0    0   0    5    0   0   6    0   5    0
+PuebloLavacalda    0   0   0   0    0    0   0    0    0   0   0    0   0    0
+PuebloOromar       0   0   0   0   15    0   0    0    0   0   0    0   5    0
+PuebloPardal       0   0   5   0    0    0   0    0    0   0   0    0   0   15
+PuebloVerdegal     0   0   0   0    0    0   0    0    0   0   0    0   0    0
+VillaRaiz          0   0   0   0    0    0   0    0    0   0   0    0   0    0
+
+:               PuebloVerdegal VillaRaiz    :=
+Arrecipolis             0           0
+CiudadAlgaria           0           0
+CiudadArborada          0           0
+CiudadCalagua           0           1
+CiudadColosalia         0           0
+CiudadFerrica           0           0
+CiudadMalvalona         0           0
+CiudadPetalia           0           0
+CiudadPortual           0           0
+PuebloAzulizo           0           0
+PuebloEscaso            0           4
+PuebloLavacalda         0           0
+PuebloOromar            0           0
+PuebloPardal            0           0
+PuebloVerdegal         14           0
+VillaRaiz               0          10
+
+ [*,*,10]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+:                $1   $2  $3   $4  $5   $6   $7  $8  $9 $10  $11  $12  $13  $14 :=
+Arrecipolis       0    0   0    0   0    0    0   0   0   0    0    0    0    0
+CiudadAlgaria     0    0   0    0   0    0    0   0   0   0    0    0    0    0
+CiudadArborada    0    0   0    0   0    0    0   0   0   0    0    0    0    0
+CiudadCalagua     3   18   0    9   0    0    0   0   0   0    0    0    0    0
+CiudadColosalia   0    0   0    0   0    0    0   0   0   0    0    0    0    0
+CiudadFerrica     0    0   0    0   0   15    0   8   0   7    0    0    0    0
+CiudadMalvalona   0    0   0    0   0    0   19   0   0   3    0   16    0    0
+CiudadPetalia     0    0   0    0   0    0    0   0   0   0    0    0    0    0
+CiudadPortual     0    0   7    0   0    0    0   0   7   6    0    0    0    0
+PuebloAzulizo     0    0   0    0   0    0    0   0   0   0    0    0    0    0
+PuebloEscaso      0    0   0    0   0    0    0   0   0   0   20    0    0    0
+PuebloLavacalda   0    0   0    0   0    0    0   0   0   0    0    0    0    0
+PuebloOromar      0    0   0    0   4    0    0   0   0   0    0    0   12    0
+PuebloPardal      0    0   8    0   0    0    0   0   0   0    0    0    0   12
+PuebloVerdegal    0    0   5   10   0    0    0   0   0   0    0    0    0    0
+VillaRaiz         8    0   0    0   0    0    0   0   0   0    0    0    0    0
+
+:               PuebloVerdegal VillaRaiz    :=
+Arrecipolis             0           0
+CiudadAlgaria           0           0
+CiudadArborada          0           0
+CiudadCalagua           0           0
+CiudadColosalia         0           0
+CiudadFerrica           0           0
+CiudadMalvalona         0           0
+CiudadPetalia           0           0
+CiudadPortual           0           0
+PuebloAzulizo           0           0
+PuebloEscaso            0           0
+PuebloLavacalda         0           0
+PuebloOromar            0           4
+PuebloPardal            0           0
+PuebloVerdegal         15           0
+VillaRaiz               0           2
+;
+
+ampl: 
+ampl: reset;
+ampl: include franco.run
+
+franco.mod, line 32 (offset 1787):
+	max is reserved
+context:  subject to  >>> max{ <<< c in centros_distribucion , a in años}:
+ampl? 
+ampl? reset;
+ampl: include franco.run
+
+franco.mod, line 2 (offset 17):
+	centros_distribucion is already defined
+context:  set  >>> centros_distribucion; <<<  # Cantidad de camiones enviados desde la fábrica. C=1, 2, …, a
+ampl: reset;
+ampl: 
+ampl: reset;
+ampl: reset;
+ampl: include franco.run
+Gurobi 9.1.1: outlev 1
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 640 rows, 2736 columns and 8320 nonzeros
+Model fingerprint: 0xa1c5f73d
+Variable types: 2560 continuous, 176 integer (86 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [1e+01, 2e+04]
+  Bounds range     [1e+00, 4e+00]
+  RHS range        [3e+00, 2e+01]
+Found heuristic solution: objective 343200.00000
+Presolve removed 10 rows and 10 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 12 available processors)
+
+Solution count 1: 343200 
+
+Model is unbounded
+Best objective 3.432000000000e+05, best bound -, gap -
+Gurobi 9.1.1: unbounded; variable.unbdd returned.
+No basis.
+costo = 0
+
+X [*] :=
+    Arrecipolis  0
+  CiudadAlgaria  0
+ CiudadArborada  0
+  CiudadCalagua  0
+CiudadColosalia  0
+  CiudadFerrica  0
+CiudadMalvalona  0
+  CiudadPetalia  0
+  CiudadPortual  0
+  PuebloAzulizo  0
+   PuebloEscaso  0
+PuebloLavacalda  0
+   PuebloOromar  0
+   PuebloPardal  0
+ PuebloVerdegal  0
+      VillaRaiz  0
+;
+
+Y [*,*]
+:                 1   2   3   4   5   6   7   8   9  10    :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0
+;
+
+W [*,*,1]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,2]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,3]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,4]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,5]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,6]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,7]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,8]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,9]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ [*,*,10]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+# $16 = VillaRaiz
+:                $1  $2  $3  $4  $5  $6  $7  $8  $9 $10 $11 $12 $13 $14 $15 $16 :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadMalvalona   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+CiudadPortual     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloPardal      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+PuebloVerdegal    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+VillaRaiz         0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+;
+
+ampl: 
+ampl: reset;
+ampl: reset;
+ampl: include franco.run
+Gurobi 9.1.1: outlev 1
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 640 rows, 2736 columns and 8320 nonzeros
+Model fingerprint: 0x1e619f9d
+Variable types: 2560 continuous, 176 integer (86 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [1e+01, 2e+04]
+  Bounds range     [1e+00, 4e+00]
+  RHS range        [3e+00, 2e+01]
+Found heuristic solution: objective 339220.00000
+Presolve removed 20 rows and 10 columns
+Presolve time: 0.01s
+Presolved: 620 rows, 2726 columns, 8130 nonzeros
+Variable types: 2560 continuous, 166 integer (86 binary)
+
+Root relaxation: objective 1.555260e+05, 551 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 155526.000    0   37 339220.000 155526.000  54.2%     -    0s
+H    0     0                    158250.00000 155526.000  1.72%     -    0s
+H    0     0                    158230.00000 155526.000  1.71%     -    0s
+     0     0 157402.000    0   14 158230.000 157402.000  0.52%     -    0s
+H    0     0                    157615.00000 157402.000  0.14%     -    0s
+     0     0 157495.500    0    2 157615.000 157495.500  0.08%     -    0s
+H    0     0                    157555.00000 157495.500  0.04%     -    0s
+H    0     0                    157520.00000 157495.500  0.02%     -    0s
+     0     0 157514.000    0    1 157520.000 157514.000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 3
+  MIR: 4
+
+Explored 1 nodes (637 simplex iterations) in 0.10 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 4: 157520 157555 158230 339220 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.575200000000e+05, best bound 1.575140000000e+05, gap 0.0038%
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 640 rows, 2736 columns and 8320 nonzeros
+Model fingerprint: 0xecac9696
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [1e+01, 2e+04]
+  Bounds range     [1e+00, 4e+00]
+  RHS range        [3e+00, 2e+01]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.2904000e+05   1.801000e+03   0.000000e+00      0s
+     329    1.5752000e+05   0.000000e+00   0.000000e+00      0s
+
+Solved in 329 iterations and 0.00 seconds
+Optimal objective  1.575200000e+05
+Gurobi 9.1.1: optimal solution; objective 157520
+637 simplex iterations
+1 branch-and-cut nodes
+plus 329 simplex iterations for intbasis
+costo = 157520
+
+X [*] :=
+    Arrecipolis  0
+  CiudadAlgaria  0
+ CiudadArborada  0
+  CiudadCalagua  1
+CiudadColosalia  0
+  CiudadFerrica  1
+CiudadMalvalona  1
+  CiudadPetalia  0
+  CiudadPortual  1
+  PuebloAzulizo  0
+   PuebloEscaso  1
+PuebloLavacalda  0
+   PuebloOromar  1
+   PuebloPardal  1
+ PuebloVerdegal  1
+      VillaRaiz  1
+;
+
+Y [*,*]
+:                 1   2   3   4   5   6   7   8   9  10    :=
+Arrecipolis       0   0   0   0   0   0   0   0   0   0
+CiudadAlgaria     0   0   0   0   0   0   0   0   0   0
+CiudadArborada    0   0   0   0   0   0   0   0   0   0
+CiudadCalagua     3   3   3   3   2   3   3   3   3   3
+CiudadColosalia   0   0   0   0   0   0   0   0   0   0
+CiudadFerrica     3   3   3   3   3   3   3   3   3   3
+CiudadMalvalona   1   2   2   2   1   2   3   1   3   4
+CiudadPetalia     0   0   0   0   0   0   0   0   0   0
+CiudadPortual     2   2   2   2   2   2   1   2   2   2
+PuebloAzulizo     0   0   0   0   0   0   0   0   0   0
+PuebloEscaso      2   2   2   2   1   2   2   2   2   2
+PuebloLavacalda   0   0   0   0   0   0   0   0   0   0
+PuebloOromar      2   2   2   2   2   2   2   2   2   2
+PuebloPardal      1   2   2   2   2   2   2   2   2   2
+PuebloVerdegal    1   2   1   3   2   1   3   2   2   3
+VillaRaiz         1   1   1   1   1   1   1   1   1   1
+;
+
+W [*,*,1]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+# $15 = PuebloVerdegal
+:                 $1  $2  $3  $4   $5   $6  $7  $8   $9 $10 $11 $12 $13 $14 $15 :=
+Arrecipolis        0   0   0   0    0    0   0   0    0   0   0   0   0   0   0
+CiudadAlgaria      0   0   0   0    0    0   0   0    0   0   0   0   0   0   0
+CiudadArborada     0   0   0   0    0    0   0   0    0   0   0   0   0   0   0
+CiudadCalagua     12   5   0   6    0    0   0   0    0   0   0   7   0   0   0
+CiudadColosalia    0   0   0   0    0    0   0   0    0   0   0   0   0   0   0
+CiudadFerrica      0   0   0   0    0   17   0   6    0   7   0   0   0   0   0
+CiudadMalvalona    0   0   0   0    0    0   4   0    2   0   0   3   0   0   0
+CiudadPetalia      0   0   0   0    0    0   0   0    0   0   0   0   0   0   0
+CiudadPortual      0   0   3   0    0    0   0   0   17   0   0   0   0   0   0
+PuebloAzulizo      0   0   0   0    0    0   0   0    0   0   0   0   0   0   0
+PuebloEscaso       0   0   0   0    0    0   0   1    0   0   5   0   9   0   0
+PuebloLavacalda    0   0   0   0    0    0   0   0    0   0   0   0   0   0   0
+PuebloOromar       0   0   0   0   20    0   0   0    0   0   0   0   0   0   0
+PuebloPardal       0   0   2   0    0    0   0   0    0   0   0   0   0   8   0
+PuebloVerdegal     0   0   0   0    0    0   0   0    0   0   0   0   0   0   8
+VillaRaiz          0   0   0   0    0    0   0   0    0   0   0   0   0   0   0
+
+:               VillaRaiz    :=
+Arrecipolis          0
+CiudadAlgaria        0
+CiudadArborada       0
+CiudadCalagua        0
+CiudadColosalia      0
+CiudadFerrica        0
+CiudadMalvalona      0
+CiudadPetalia        0
+CiudadPortual        0
+PuebloAzulizo        0
+PuebloEscaso         4
+PuebloLavacalda      0
+PuebloOromar         0
+PuebloPardal         0
+PuebloVerdegal       0
+VillaRaiz           10
+
+ [*,*,2]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+:                $1   $2  $3   $4   $5  $6  $7   $8   $9 $10 $11  $12  $13  $14 :=
+Arrecipolis       0    0   0    0    0   0   0    0    0   0   0    0    0    0
+CiudadAlgaria     0    0   0    0    0   0   0    0    0   0   0    0    0    0
+CiudadArborada    0    0   0    0    0   0   0    0    0   0   0    0    0    0
+CiudadCalagua     0   19   0   11    0   0   0    0    0   0   0    0    0    0
+CiudadColosalia   0    0   0    0    0   0   0    0    0   0   0    0    0    0
+CiudadFerrica     0    0   0    0    0   5   0   14    0   8   0    0    3    0
+CiudadMalvalona   0    0   2    0    0   0   4    0    1   0   0   11    0    0
+CiudadPetalia     0    0   0    0    0   0   0    0    0   0   0    0    0    0
+CiudadPortual     0    0   0    0    0   0   0    0   15   5   0    0    0    0
+PuebloAzulizo     0    0   0    0    0   0   0    0    0   0   0    0    0    0
+PuebloEscaso      0    0   0    0    0   0   0    0    0   0   8    0   12    0
+PuebloLavacalda   0    0   0    0    0   0   0    0    0   0   0    0    0    0
+PuebloOromar      0    0   0    0   15   0   0    0    0   0   0    0    5    0
+PuebloPardal      0    0   6    0    0   0   0    0    0   0   0    0    0   14
+PuebloVerdegal    3    0   0    6    0   0   0    0    0   0   0    0    0    0
+VillaRaiz         0    0   0    0    0   0   0    0    0   0   0    0    0    0
+
+:               PuebloVerdegal VillaRaiz    :=
+Arrecipolis            0            0
+CiudadAlgaria          0            0
+CiudadArborada         0            0
+CiudadCalagua          0            0
+CiudadColosalia        0            0
+CiudadFerrica          0            0
+CiudadMalvalona        0            0
+CiudadPetalia          0            0
+CiudadPortual          0            0
+PuebloAzulizo          0            0
+PuebloEscaso           0            0
+PuebloLavacalda        0            0
+PuebloOromar           0            0
+PuebloPardal           0            0
+PuebloVerdegal         9            2
+VillaRaiz              0           10
+
+ [*,*,3]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+:                $1  $2  $3  $4   $5   $6   $7  $8   $9 $10 $11  $12  $13  $14 :=
+Arrecipolis       0   0   0   0    0    0    0   0    0   0   0    0    0    0
+CiudadAlgaria     0   0   0   0    0    0    0   0    0   0   0    0    0    0
+CiudadArborada    0   0   0   0    0    0    0   0    0   0   0    0    0    0
+CiudadCalagua     8   7   0   4    0    0    0   0    0   0   0   11    0    0
+CiudadColosalia   0   0   0   0    0    0    0   0    0   0   0    0    0    0
+CiudadFerrica     0   0   0   0    0   15    0   6    0   6   3    0    0    0
+CiudadMalvalona   0   0   0   0    0    0   14   0    0   0   0    1    0    0
+CiudadPetalia     0   0   0   0    0    0    0   0    0   0   0    0    0    0
+CiudadPortual     0   0   3   0    0    0    0   0   17   0   0    0    0    0
+PuebloAzulizo     0   0   0   0    0    0    0   0    0   0   0    0    0    0
+PuebloEscaso      0   0   0   0    0    0    0   0    0   0   9    0   11    0
+PuebloLavacalda   0   0   0   0    0    0    0   0    0   0   0    0    0    0
+PuebloOromar      0   0   0   0   18    0    0   0    0   0   0    0    2    0
+PuebloPardal      0   0   1   0    0    0    0   0    0   0   0    0    0   15
+PuebloVerdegal    0   0   0   0    0    0    0   0    0   0   0    0    0    0
+VillaRaiz         5   0   0   0    0    0    0   0    0   0   0    0    0    0
+
+:               PuebloVerdegal VillaRaiz    :=
+Arrecipolis            0            0
+CiudadAlgaria          0            0
+CiudadArborada         0            0
+CiudadCalagua          0            0
+CiudadColosalia        0            0
+CiudadFerrica          0            0
+CiudadMalvalona        0            0
+CiudadPetalia          0            0
+CiudadPortual          0            0
+PuebloAzulizo          0            0
+PuebloEscaso           0            0
+PuebloLavacalda        0            0
+PuebloOromar           0            0
+PuebloPardal           0            0
+PuebloVerdegal         7            0
+VillaRaiz              0            5
+
+ [*,*,4]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+:                 $1   $2  $3  $4   $5   $6  $7   $8  $9 $10  $11  $12 $13  $14 :=
+Arrecipolis        0    0   0   0    0    0   0    0   0   0    0    0   0    0
+CiudadAlgaria      0    0   0   0    0    0   0    0   0   0    0    0   0    0
+CiudadArborada     0    0   0   0    0    0   0    0   0   0    0    0   0    0
+CiudadCalagua     13   15   0   0    0    0   0    0   0   0    0    0   0    0
+CiudadColosalia    0    0   0   0    0    0   0    0   0   0    0    0   0    0
+CiudadFerrica      0    0   0   0    0   12   0   18   0   0    0    0   0    0
+CiudadMalvalona    0    0   0   0    0    0   5    0   0   0    0   15   0    0
+CiudadPetalia      0    0   0   0    0    0   0    0   0   0    0    0   0    0
+CiudadPortual      0    0   3   0    0    0   3    0   5   6    0    0   0    0
+PuebloAzulizo      0    0   0   0    0    0   0    0   0   0    0    0   0    0
+PuebloEscaso       0    0   0   0    0    0   0    0   0   0   16    0   1    0
+PuebloLavacalda    0    0   0   0    0    0   0    0   0   0    0    0   0    0
+PuebloOromar       0    0   0   0   12    0   0    0   0   0    0    0   8    0
+PuebloPardal       0    0   0   0    0    0   0    0   0   0    0    0   0   20
+PuebloVerdegal     0    4   0   6    0    0   0    0   0   0    0    0   0    0
+VillaRaiz          0    0   0   0    0    0   0    0   0   0    0    0   0    0
+
+:               PuebloVerdegal VillaRaiz    :=
+Arrecipolis             0           0
+CiudadAlgaria           0           0
+CiudadArborada          0           0
+CiudadCalagua           0           2
+CiudadColosalia         0           0
+CiudadFerrica           0           0
+CiudadMalvalona         0           0
+CiudadPetalia           0           0
+CiudadPortual           0           0
+PuebloAzulizo           0           0
+PuebloEscaso            0           3
+PuebloLavacalda         0           0
+PuebloOromar            0           0
+PuebloPardal            0           0
+PuebloVerdegal         18           0
+VillaRaiz               0          10
+
+ [*,*,5]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+:                 $1  $2  $3   $4  $5  $6  $7   $8   $9 $10 $11 $12  $13  $14 :=
+Arrecipolis        0   0   0    0   0   0   0    0    0   0   0   0    0    0
+CiudadAlgaria      0   0   0    0   0   0   0    0    0   0   0   0    0    0
+CiudadArborada     0   0   0    0   0   0   0    0    0   0   0   0    0    0
+CiudadCalagua      0   6   0   12   0   0   0    0    0   0   0   0    0    0
+CiudadColosalia    0   0   0    0   0   0   0    0    0   0   0   0    0    0
+CiudadFerrica      0   0   0    0   0   8   0   15    0   7   0   0    0    0
+CiudadMalvalona    0   0   0    0   0   0   6    0    0   0   0   4    0    0
+CiudadPetalia      0   0   0    0   0   0   0    0    0   0   0   0    0    0
+CiudadPortual      0   0   6    0   0   0   0    0   11   2   0   0    0    0
+PuebloAzulizo      0   0   0    0   0   0   0    0    0   0   0   0    0    0
+PuebloEscaso       2   0   0    0   0   0   0    0    0   0   4   0    1    0
+PuebloLavacalda    0   0   0    0   0   0   0    0    0   0   0   0    0    0
+PuebloOromar       0   0   0    0   8   0   0    0    0   0   0   0   12    0
+PuebloPardal       0   0   1    0   0   0   0    0    0   0   0   0    0   19
+PuebloVerdegal     0   0   0    0   0   0   0    0    0   0   0   0    0    0
+VillaRaiz         10   0   0    0   0   0   0    0    0   0   0   0    0    0
+
+:               PuebloVerdegal VillaRaiz    :=
+Arrecipolis             0           0
+CiudadAlgaria           0           0
+CiudadArborada          0           0
+CiudadCalagua           0           0
+CiudadColosalia         0           0
+CiudadFerrica           0           0
+CiudadMalvalona         0           0
+CiudadPetalia           0           0
+CiudadPortual           0           0
+PuebloAzulizo           0           0
+PuebloEscaso            0           3
+PuebloLavacalda         0           0
+PuebloOromar            0           0
+PuebloPardal            0           0
+PuebloVerdegal         14           0
+VillaRaiz               0           0
+
+ [*,*,6]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+:                $1  $2  $3  $4   $5  $6   $7   $8   $9  $10 $11 $12 $13  $14 :=
+Arrecipolis       0   0   0   0    0   0    0    0    0    0   0   0   0    0
+CiudadAlgaria     0   0   0   0    0   0    0    0    0    0   0   0   0    0
+CiudadArborada    0   0   0   0    0   0    0    0    0    0   0   0   0    0
+CiudadCalagua     7   4   7   3    0   0    0    0    0    0   0   0   0    0
+CiudadColosalia   0   0   0   0    0   0    0    0    0    0   0   0   0    0
+CiudadFerrica     0   0   0   0    0   6    0   12    0   12   0   0   0    0
+CiudadMalvalona   0   0   0   0    0   0   12    0    1    0   0   7   0    0
+CiudadPetalia     0   0   0   0    0   0    0    0    0    0   0   0   0    0
+CiudadPortual     0   0   2   0    0   0    0    0   15    3   0   0   0    0
+PuebloAzulizo     0   0   0   0    0   0    0    0    0    0   0   0   0    0
+PuebloEscaso      0   0   0   0    0   0    0    0    0    0   8   0   9    0
+PuebloLavacalda   0   0   0   0    0   0    0    0    0    0   0   0   0    0
+PuebloOromar      0   0   0   0   20   0    0    0    0    0   0   0   0    0
+PuebloPardal      0   0   7   0    0   0    0    0    0    0   0   0   0   13
+PuebloVerdegal    0   0   3   0    0   0    0    0    0    0   0   0   0    0
+VillaRaiz         0   0   0   0    0   0    0    0    0    0   0   0   0    0
+
+:               PuebloVerdegal VillaRaiz    :=
+Arrecipolis            0            0
+CiudadAlgaria          0            0
+CiudadArborada         0            0
+CiudadCalagua          0            3
+CiudadColosalia        0            0
+CiudadFerrica          0            0
+CiudadMalvalona        0            0
+CiudadPetalia          0            0
+CiudadPortual          0            0
+PuebloAzulizo          0            0
+PuebloEscaso           0            3
+PuebloLavacalda        0            0
+PuebloOromar           0            0
+PuebloPardal           0            0
+PuebloVerdegal         7            0
+VillaRaiz              0           10
+
+ [*,*,7]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+:                 $1  $2  $3   $4  $5   $6   $7  $8  $9 $10  $11  $12  $13  $14 :=
+Arrecipolis        0   0   0    0   0    0    0   0   0   0    0    0    0    0
+CiudadAlgaria      0   0   0    0   0    0    0   0   0   0    0    0    0    0
+CiudadArborada     0   0   0    0   0    0    0   0   0   0    0    0    0    0
+CiudadCalagua     11   0   0   19   0    0    0   0   0   0    0    0    0    0
+CiudadColosalia    0   0   0    0   0    0    0   0   0   0    0    0    0    0
+CiudadFerrica      0   0   0    0   0   12    0   5   0   6    0    0    0    0
+CiudadMalvalona    0   0   0    0   0    0   14   0   0   0    0   11    0    0
+CiudadPetalia      0   0   0    0   0    0    0   0   0   0    0    0    0    0
+CiudadPortual      0   0   1    0   0    0    0   0   9   0    0    0    0    0
+PuebloAzulizo      0   0   0    0   0    0    0   0   0   0    0    0    0    0
+PuebloEscaso       2   0   0    0   0    0    0   0   0   0   14    0    2    0
+PuebloLavacalda    0   0   0    0   0    0    0   0   0   0    0    0    0    0
+PuebloOromar       0   0   0    0   9    0    0   0   0   0    0    0   11    0
+PuebloPardal       0   0   4    0   0    0    0   0   0   0    0    0    0   16
+PuebloVerdegal     5   6   0    0   0    0    0   0   0   0    0    0    0    0
+VillaRaiz          0   0   0    0   0    0    0   0   0   0    0    0    0    0
+
+:               PuebloVerdegal VillaRaiz    :=
+Arrecipolis             0           0
+CiudadAlgaria           0           0
+CiudadArborada          0           0
+CiudadCalagua           0           0
+CiudadColosalia         0           0
+CiudadFerrica           0           0
+CiudadMalvalona         0           0
+CiudadPetalia           0           0
+CiudadPortual           0           0
+PuebloAzulizo           0           0
+PuebloEscaso            0           2
+PuebloLavacalda         0           0
+PuebloOromar            0           0
+PuebloPardal            0           0
+PuebloVerdegal         17           0
+VillaRaiz               0          10
+
+ [*,*,8]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+:                $1   $2   $3   $4   $5  $6  $7  $8   $9  $10 $11 $12 $13  $14 :=
+Arrecipolis       0    0    0    0    0   0   0   0    0    0   0   0   0    0
+CiudadAlgaria     0    0    0    0    0   0   0   0    0    0   0   0   0    0
+CiudadArborada    0    0    0    0    0   0   0   0    0    0   0   0   0    0
+CiudadCalagua     0   14    0   13    0   0   0   0    0    0   0   3   0    0
+CiudadColosalia   0    0    0    0    0   0   0   0    0    0   0   0   0    0
+CiudadFerrica     0    0    0    0    0   9   0   8    0   10   0   0   0    0
+CiudadMalvalona   0    0    0    0    0   0   7   0    0    0   0   3   0    0
+CiudadPetalia     0    0    0    0    0   0   0   0    0    0   0   0   0    0
+CiudadPortual     0    0    2    0    0   0   0   0   18    0   0   0   0    0
+PuebloAzulizo     0    0    0    0    0   0   0   0    0    0   0   0   0    0
+PuebloEscaso      8    0    0    0    0   0   0   0    0    0   6   0   0    0
+PuebloLavacalda   0    0    0    0    0   0   0   0    0    0   0   0   0    0
+PuebloOromar      0    0    0    0   12   0   0   0    0    0   0   0   6    0
+PuebloPardal      0    0   10    0    0   0   0   0    0    0   0   0   0   10
+PuebloVerdegal    0    0    0    2    0   0   0   0    0    0   0   0   0    2
+VillaRaiz         0    0    0    0    0   0   0   0    0    0   0   0   0    0
+
+:               PuebloVerdegal VillaRaiz    :=
+Arrecipolis             0           0
+CiudadAlgaria           0           0
+CiudadArborada          0           0
+CiudadCalagua           0           0
+CiudadColosalia         0           0
+CiudadFerrica           0           0
+CiudadMalvalona         0           0
+CiudadPetalia           0           0
+CiudadPortual           0           0
+PuebloAzulizo           0           0
+PuebloEscaso            0           3
+PuebloLavacalda         0           0
+PuebloOromar            0           0
+PuebloPardal            0           0
+PuebloVerdegal         15           0
+VillaRaiz               0          10
+
+ [*,*,9]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+:                 $1  $2  $3  $4   $5   $6  $7   $8   $9 $10 $11  $12 $13  $14 :=
+Arrecipolis        0   0   0   0    0    0   0    0    0   0   0    0   0    0
+CiudadAlgaria      0   0   0   0    0    0   0    0    0   0   0    0   0    0
+CiudadArborada     0   0   0   0    0    0   0    0    0   0   0    0   0    0
+CiudadCalagua     13   6   0   8    0    0   0    0    0   0   0    2   0    0
+CiudadColosalia    0   0   0   0    0    0   0    0    0   0   0    0   0    0
+CiudadFerrica      0   0   0   0    0   17   0   13    0   0   0    0   0    0
+CiudadMalvalona    0   0   0   0    0    0   6    0    2   9   0   13   0    0
+CiudadPetalia      0   0   0   0    0    0   0    0    0   0   0    0   0    0
+CiudadPortual      0   0   7   0    0    0   0    0   13   0   0    0   0    0
+PuebloAzulizo      0   0   0   0    0    0   0    0    0   0   0    0   0    0
+PuebloEscaso       0   0   0   0    0    0   0    5    0   0   6    0   5    0
+PuebloLavacalda    0   0   0   0    0    0   0    0    0   0   0    0   0    0
+PuebloOromar       0   0   0   0   15    0   0    0    0   0   0    0   5    0
+PuebloPardal       0   0   5   0    0    0   0    0    0   0   0    0   0   15
+PuebloVerdegal     0   0   0   0    0    0   0    0    0   0   0    0   0    0
+VillaRaiz          0   0   0   0    0    0   0    0    0   0   0    0   0    0
+
+:               PuebloVerdegal VillaRaiz    :=
+Arrecipolis             0           0
+CiudadAlgaria           0           0
+CiudadArborada          0           0
+CiudadCalagua           0           1
+CiudadColosalia         0           0
+CiudadFerrica           0           0
+CiudadMalvalona         0           0
+CiudadPetalia           0           0
+CiudadPortual           0           0
+PuebloAzulizo           0           0
+PuebloEscaso            0           4
+PuebloLavacalda         0           0
+PuebloOromar            0           0
+PuebloPardal            0           0
+PuebloVerdegal         14           0
+VillaRaiz               0          10
+
+ [*,*,10]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+:                $1   $2  $3   $4  $5   $6   $7  $8  $9 $10  $11  $12  $13  $14 :=
+Arrecipolis       0    0   0    0   0    0    0   0   0   0    0    0    0    0
+CiudadAlgaria     0    0   0    0   0    0    0   0   0   0    0    0    0    0
+CiudadArborada    0    0   0    0   0    0    0   0   0   0    0    0    0    0
+CiudadCalagua     0   11   0   19   0    0    0   0   0   0    0    0    0    0
+CiudadColosalia   0    0   0    0   0    0    0   0   0   0    0    0    0    0
+CiudadFerrica     0    0   0    0   0   15    0   8   0   7    0    0    0    0
+CiudadMalvalona   0    0   0    0   0    0   19   0   0   3    0   16    0    0
+CiudadPetalia     0    0   0    0   0    0    0   0   0   0    0    0    0    0
+CiudadPortual     0    0   7    0   0    0    0   0   7   6    0    0    0    0
+PuebloAzulizo     0    0   0    0   0    0    0   0   0   0    0    0    0    0
+PuebloEscaso      0    0   0    0   0    0    0   0   0   0   20    0    0    0
+PuebloLavacalda   0    0   0    0   0    0    0   0   0   0    0    0    0    0
+PuebloOromar      0    0   0    0   4    0    0   0   0   0    0    0   12    0
+PuebloPardal      0    0   8    0   0    0    0   0   0   0    0    0    0   12
+PuebloVerdegal    3    7   5    0   0    0    0   0   0   0    0    0    0    0
+VillaRaiz         8    0   0    0   0    0    0   0   0   0    0    0    0    0
+
+:               PuebloVerdegal VillaRaiz    :=
+Arrecipolis             0           0
+CiudadAlgaria           0           0
+CiudadArborada          0           0
+CiudadCalagua           0           0
+CiudadColosalia         0           0
+CiudadFerrica           0           0
+CiudadMalvalona         0           0
+CiudadPetalia           0           0
+CiudadPortual           0           0
+PuebloAzulizo           0           0
+PuebloEscaso            0           0
+PuebloLavacalda         0           0
+PuebloOromar            0           4
+PuebloPardal            0           0
+PuebloVerdegal         15           0
+VillaRaiz               0           2
+;
+
+ampl: 

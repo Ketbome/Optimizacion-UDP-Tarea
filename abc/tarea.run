@@ -1,0 +1,11 @@
+model tarea.mod;
+data tarea.dat;
+option solver gurobi;
+option gurobi_options "outlev 1";
+option log_file salidaABC.txt;
+solve;
+display Costos;
+display X;
+display H;
+display Q;
+close;

@@ -1,0 +1,156 @@
+Gurobi 9.1.1: outlev 1
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 64 rows, 288 columns and 832 nonzeros
+Model fingerprint: 0xe5f3ca6d
+Variable types: 256 continuous, 32 integer (23 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [1e+01, 5e+03]
+  Bounds range     [1e+00, 4e+00]
+  RHS range        [4e+00, 2e+01]
+Found heuristic solution: objective 58575.000000
+Presolve removed 2 rows and 1 columns
+Presolve time: 0.00s
+Presolved: 62 rows, 287 columns, 813 nonzeros
+Variable types: 256 continuous, 31 integer (23 binary)
+
+Root relaxation: objective 2.062400e+04, 81 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 20624.0000    0    2 58575.0000 20624.0000  64.8%     -    0s
+H    0     0                    22730.000000 20624.0000  9.27%     -    0s
+     0     0 21174.0000    0    2 22730.0000 21174.0000  6.85%     -    0s
+     0     0 21174.0000    0    2 22730.0000 21174.0000  6.85%     -    0s
+H    0     0                    22690.000000 21174.0000  6.68%     -    0s
+     0     0 21174.0000    0    2 22690.0000 21174.0000  6.68%     -    0s
+H    0     0                    21610.000000 21174.0000  2.02%     -    0s
+H    0     0                    21490.000000 21174.0000  1.47%     -    0s
+
+Cutting planes:
+  Gomory: 2
+  Implied bound: 1
+  MIR: 2
+  Flow cover: 2
+
+Explored 1 nodes (147 simplex iterations) in 0.02 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 3: 21490 22690 58575 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.149000000000e+04, best bound 2.149000000000e+04, gap 0.0000%
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 64 rows, 288 columns and 832 nonzeros
+Model fingerprint: 0x05803fa2
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [1e+01, 5e+03]
+  Bounds range     [1e+00, 4e+00]
+  RHS range        [4e+00, 2e+01]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.7580000e+04   1.560000e+02   0.000000e+00      0s
+      44    2.1490000e+04   0.000000e+00   0.000000e+00      0s
+
+Solved in 44 iterations and 0.00 seconds
+Optimal objective  2.149000000e+04
+Gurobi 9.1.1: optimal solution; objective 21490
+147 simplex iterations
+1 branch-and-cut nodes
+plus 44 simplex iterations for intbasis
+Costos = 21490
+
+X [*] :=
+    Arrecipolis  0
+  CiudadAlgaria  0
+ CiudadArborada  0
+  CiudadCalagua  3
+CiudadColosalia  0
+  CiudadFerrica  3
+CiudadMalvalona  4
+  CiudadPetalia  0
+  CiudadPortual  0
+  PuebloAzulizo  0
+   PuebloEscaso  2
+PuebloLavacalda  0
+   PuebloOromar  0
+   PuebloPardal  0
+ PuebloVerdegal  3
+      VillaRaiz  1
+;
+
+H [*] :=
+    Arrecipolis  0
+  CiudadAlgaria  0
+ CiudadArborada  0
+  CiudadCalagua  1
+CiudadColosalia  0
+  CiudadFerrica  1
+CiudadMalvalona  1
+  CiudadPetalia  0
+  CiudadPortual  0
+  PuebloAzulizo  0
+   PuebloEscaso  1
+PuebloLavacalda  0
+   PuebloOromar  0
+   PuebloPardal  0
+ PuebloVerdegal  1
+      VillaRaiz  1
+;
+
+Q [*,*]
+# $1 = Arrecipolis
+# $2 = CiudadAlgaria
+# $3 = CiudadArborada
+# $4 = CiudadCalagua
+# $5 = CiudadColosalia
+# $6 = CiudadFerrica
+# $7 = CiudadMalvalona
+# $8 = CiudadPetalia
+# $9 = CiudadPortual
+# $10 = PuebloAzulizo
+# $11 = PuebloEscaso
+# $12 = PuebloLavacalda
+# $13 = PuebloOromar
+# $14 = PuebloPardal
+:                 $1  $2  $3  $4   $5   $6  $7  $8   $9 $10 $11  $12 $13 $14 :=
+Arrecipolis        0   0   0   0    0    0   0   0    0   0   0    0   0   0
+CiudadAlgaria      0   0   0   0    0    0   0   0    0   0   0    0   0   0
+CiudadArborada     0   0   0   0    0    0   0   0    0   0   0    0   0   0
+CiudadCalagua     10   0   0   0   20    0   0   0    0   0   0    0   0   0
+CiudadColosalia    0   0   0   0    0    0   0   0    0   0   0    0   0   0
+CiudadFerrica      0   0   0   0    0   17   0   7    0   6   0    0   0   0
+CiudadMalvalona    0   0   0   0    0    0   4   0   19   1   0   10   0   2
+CiudadPetalia      0   0   0   0    0    0   0   0    0   0   0    0   0   0
+CiudadPortual      0   0   0   0    0    0   0   0    0   0   0    0   0   0
+PuebloAzulizo      0   0   0   0    0    0   0   0    0   0   0    0   0   0
+PuebloEscaso       0   0   0   0    0    0   0   0    0   0   5    0   9   0
+PuebloLavacalda    0   0   0   0    0    0   0   0    0   0   0    0   0   0
+PuebloOromar       0   0   0   0    0    0   0   0    0   0   0    0   0   0
+PuebloPardal       0   0   0   0    0    0   0   0    0   0   0    0   0   0
+PuebloVerdegal     0   5   5   6    0    0   0   0    0   0   0    0   0   6
+VillaRaiz          2   0   0   0    0    0   0   0    0   0   0    0   0   0
+
+:               PuebloVerdegal VillaRaiz    :=
+Arrecipolis            0            0
+CiudadAlgaria          0            0
+CiudadArborada         0            0
+CiudadCalagua          0            0
+CiudadColosalia        0            0
+CiudadFerrica          0            0
+CiudadMalvalona        0            0
+CiudadPetalia          0            0
+CiudadPortual          0            0
+PuebloAzulizo          0            0
+PuebloEscaso           0            6
+PuebloLavacalda        0            0
+PuebloOromar           0            0
+PuebloPardal           0            0
+PuebloVerdegal         8            0
+VillaRaiz              0            8
+;
+
+ampl: reset;
